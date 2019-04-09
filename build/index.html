@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="css/style.css">
+    <title>Табло прилета, вылета</title>
+</head>
+<body>
+        <header class="header">
+                <h1>Электронное табло </h1>
+                <div class="choice">
+                    <div class="departureTab btn  departure">Вылетают </div>
+                    <div class="arrivalTab btn arrival">Прилетают </div>
+                    <div class="delayTab btn expects">Задерживаются </div>
+                    <div class="searchForm">
+                        <label for="searchFormLabel" class="searchFormLabel">Поиск по номеру рейса </label>
+                        <input type="text" id="searchFormField">
+                        <div type="button" class="searchFormBtn" >Найти</div>
+                    </div>
+                </div>
+        </header>
+
+    <div class="flightTable">
+        <div class="flightInfoNavigation">
+            <div class="flightTimeTitle">Время</div>
+            <div class="flightCityTitle">Направление</div>
+            <div class="flightAirlineTitle">Рейс</div>
+            <div class="flightTerminalTitle">Терминал</div>
+            <div class="flightStatusTitle">Статус</div>
+        </div>  
+    </div>
+
+    <template class="templateObject">
+        <div class="flightInfo">
+            <div class="flightTime"></div>
+            <div class="flightCity"></div>
+            <div class="flightAirline"></div>
+            <div class="flightTerminal"></div>
+            <div class="flightStatus"></div>
+            <div class="arrivalOrDeparture hidden"></div>
+        </div>
+    </template>
+
+    <script src="js/index.js"></script> 
+</body>
+</html>

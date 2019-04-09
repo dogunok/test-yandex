@@ -1,0 +1,93 @@
+.hidden {
+  display: none !important;
+}
+.active {
+  box-shadow: 4px 5px 7px 1px hsl(246, 85%, 23%) !important;
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+  color: hsl(246, 85%, 23%);
+}
+.choice {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: black;
+}
+.choice .btn {
+  width: 100%;
+  height: max-content;
+  padding: 7px;
+  margin: 0 10px;
+  box-shadow: 4px 5px 7px 1px grey;
+  text-align: center;
+  cursor: pointer;
+}
+.choice .searchForm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  box-shadow: none;
+  cursor: default;
+  text-align: center;
+}
+.choice .searchForm #searchFormField {
+  margin: 0 10px;
+}
+.choice .searchForm .searchFormBtn {
+  cursor: pointer;
+  width: 130px;
+  height: max-content;
+  padding: 7px;
+  box-shadow: 4px 5px 7px 1px grey;
+}
+.flightTable {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.flightTable .flightInfo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+.flightTable .flightInfo .flightCity,
+.flightTable .flightInfo .flightAirline,
+.flightTable .flightInfo .flightTerminal,
+.flightTable .flightInfo .arrivalOrDeparture,
+.flightTable .flightInfo .flightStatus,
+.flightTable .flightInfo .flightTime {
+  width: 100%;
+  text-align: center;
+}
+.flightTable .flightInfoNavigation {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 15px 0;
+}
+.flightTable .flightInfoNavigation .flightCityTitle,
+.flightTable .flightInfoNavigation .flightAirlineTitle,
+.flightTable .flightInfoNavigation .flightTerminalTitle,
+.flightTable .flightInfoNavigation .arrivalOrDepartureTitle,
+.flightTable .flightInfoNavigation .flightStatusTitle,
+.flightTable .flightInfoNavigation .flightTimeTitle {
+  width: 100%;
+  text-align: center;
+}
